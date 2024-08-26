@@ -25,7 +25,7 @@ class DBStorage:
         host = getenv("HBNB_MYSQL_HOST")
         env = getenv("HBNB_ENV")
 
-        self.__engine = create_engine('mysql+mysqldb://username:password@localhost/dbname'
+        self.__engine = create_engine('mysql+mysqldb://root:mesics@localhost/sqldb'
                                             , pool_pre_ping=True)
 
         if env == "test":
